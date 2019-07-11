@@ -1,0 +1,298 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{longtable}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+%Tweak a bit the top margin
+\addtolength{\voffset}{-1.0cm}
+
+	\addtolength{\oddsidemargin}{-.70in}
+	\addtolength{\evensidemargin}{-.70in}
+	\addtolength{\textwidth}{1.4in}
+
+	\addtolength{\textheight}{1.4in}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+\usepackage{blindtext}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Alexander \textsc{Bowring}
+	}\bigskip\par}
+
+\begin{center}
+\begin{tabular}{rl}
+	\textsc{address:} & Apt. 40 Trinity Court, 4 Between Towns Road, Oxford, OX4 3PP \\
+	\textsc{phone:} & +447944 240731\\
+    \textsc{email:}     & \href{mailto:alex.bowring@bdi.ox.ac.uk}{alex.bowring@bdi.ox.ac.uk}\\
+    \\
+    \textbf{Research Interests:} & Functional Magnetic Resonance Imaging, Analysis Pipelines, \\& Statistical Inference Methods, Open science.
+\end{tabular}
+\end{center}
+
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+%\section{Personal Data}
+
+%\begin{tabular}{rl}
+%    \textsc{Place and Date of Birth:} & Someplace, Italy  | dd Month 1912 \\
+%   \textsc{Address:}   & CV Inn 19, 20301, Milano, Italy \\
+%    \textsc{Phone:}     & +39 123 456789\\
+%    \textsc{email:}     & \href{mailto:alessandro.plasmati@gmail.com}{alessandro.plasmati@gmail.com}
+%    \end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}	
+\textsc{Oct} 2017 - Present & DPhil. in \textsc{Population Health}, \textbf{The University of Oxford}, Oxford\\
+& \textbf{Thesis:} \textit{A Comparison of Neuroimaging Software and a Contour Inference Method} \\& \textit{for Analysis of Task-fMRI Data.}\\
+& \textbf{Supervisors:} \textit{Professor Thomas Nichols, PhD. \& Professor Stephen Smith, PhD.} \\&\\ 
+\textsc{Oct} 2016 - \textsc{Oct} 2017 & PhD. in \textsc{Statistics}, \textbf{The University of Warwick}, Coventry\\
+& \textbf{Supervisors:} \textit{Professor Thomas Nichols, PhD. \& Professor Armin Schwartzman, PhD.} \\&\\
+\textsc{Sep} 2012 - \textsc{Jul} 2015 & BSc. in \textsc{Mathematics}, \textbf{The University of Warwick}, Coventry\\
+& \textbf{First Class Honours.} \\
+& Selected modules: \textit{Galois Theory 88\%, Analysis III 90\%, Algebra II 86\%, Algebra I 80\%,}\\
+&\textit{Functional Analysis II 78\%, Programming for Scientists 89\%, Mathematics by Computer 92\%.}\\&\\
+\textsc{Sep} 2009 - \textsc{Jul} 2012 & GCE A Levels, \textbf{The College of Richard Collyer}, Horsham\\
+& \textbf{A Level results:} \textit{Further Mathematics A*, Mathematics A*, Economics A, Physics C.}\\&\\
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Publications}
+(Preprint) \textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Spatial Confidence Sets for Raw Effect Size Images. \textit{BioRxiv} 2019. 
+
+\textbf{Bowring A}, Maumet C, Nichols TE. Exploring the impact of analysis software on task fMRI results. \textit{Human Brain Mapping.} 2019. 
+
+Maumet C, Auer T, \textbf{Bowring A}, \dots, Nichols TE. Sharing brain mapping statistical results with the neuroimaging data model. \textit{Nature Scientific Data} 2016.
+
+Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring fMRI Results Space: 31 Variants of an fMRI Analysis in AFNI, FSL, and SPM. \textit{Frontiers in Neuroinformatics.} 2016.\\
+
+\section{Selected Conference Presentations}
+(Oral \& Poster Presentation) \textbf{Same Data – Different Software – Different Results? Analytic Variability of Group fMRI Results.}, \textit{24th Annual Meeting of the Organization for Human Brain Mapping}, Singapore, June 17-21 2018. 
+\vspace{-2mm}
+\begin{itemize}
+\item Winner of a \$2,000 OHBM Merit Abstract Award.
+\vspace{-2mm}
+\item Less than 5\% of submitted abstracts chosen for an oral presentation. 
+\end{itemize}
+
+(Oral \& Poster Presentation) \textbf{Spatial Confidence Sets - Beyond Null Hypothesis Testing of Cluster Size}, \textit{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017.
+\vspace{-2mm}
+\begin{itemize}
+\item Less than 5\% of submitted abstracts chosen for an oral presentation. 
+\end{itemize}
+
+(Poster Presentation) \textbf{Impact of Analysis Software on Replication of fMRI Studies}, \textit{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017.
+
+(Oral Presentation) \textbf{Towards reproducible brain imaging research}, \textit{WIN Annual Conference}, Coventry, January 24 2017.
+
+(Poster Presentation) \textbf{Confidence Sets - Going Beyond Voxel-level and Cluster-level Null Hypothesis Testing.} \textit{22nd Annual Meeting of the Organization for Human Brain Mapping}, Geneva, Switzerland, June 26-30 2016. 
+
+\newpage 
+%Section: Employment
+\section{Research Experience}
+\begin{longtable}{rl}	
+ \textsc{Nov} 2015 - \textsc{Oct} 2016
+& \large{\textbf{Research Assistant in Neuroimaging Statistics}}\\
+& \textsc{Warwick Manufacturing Group}\\
+& \textit{The Instititute of Digital Healthcare, The University of Warwick, Coventry} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Worked alongside Prof. Thomas Nichols and Dr. Camille Maumet to develop standard practices for data sharing and meta-analysis in neuroimaging.
+ \item Extensively analysed neuroimaging data, gaining significant experience of the three main neuroimaging software packages: \textit{SPM}, \textit{FSL} and \textit{AFNI}. 
+ \item Made analyses publicly available and provided documentation on my research efforts, becoming familiar with the Github version control system and making use of online data repositories such as Neurovault. 
+ \item Mentored a PhD student who visited our lab for three months.  Our research during this period was published after peer-review in the journal \textit{Frontiers in Neuroinformatics}, for which I am second author. 
+ \item Assisted Dr. Maumet on the \textit{Neuroimaging Data Model} (NIDM), a project dedicated to the development of a standard to share neuroimaging results.
+ \item As part of the NIDM project, proof-read and edited specification documents and tested research prototypes, reporting back on any issues. 
+ \item Analyzed data and helped edit a journal article for NIDM, now published in \textit{Nature Scientific Data}, for which I am a coauthor. 
+ \item Participated in weekly conference calls with international collaborators, discussing progress and ideas to further develop the NIDM project.
+ \item Conducted my own research into developing a spatial inference method for analysing neuroimaging data under the supervision of Prof. Nichols. 
+ \item Created and ran computer simulations to test this method in MATLAB. 
+ \item Wrote an abstract describing the method, and gave a poster presentation on this research at the \textit{Organization for Human Brain Mapping} conference in Geneva, Switzerland.  
+ \item Communicated daily with Prof. Nichols and Dr. Maumet, and participated in weekly meetings with other post-doctoral researchers and PhD students working in the field at the university. 
+  \end{itemize}
+ \end{minipage} \\&\\
+ 
+\textsc{Jun} 2015 - \textsc{Oct} 2015
+& \large{\textbf{Research Intern}}\\
+& \textsc{Undergraduate Research Support Scheme}\\
+& \textit{The University of Warwick, Coventry} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Worked on the project \textit{Visualising the brain - Developing viewers of standardised fMRI results} under the supervision of Prof. Thomas Nichols.
+ \item Analysed neuroimaging data in the neuroimaging software package \textit{SPM}. I used this data to test a research prototype developed by Dr Camille Maumet and made my analyses publicly available online.  
+ \item Communicated daily with Prof. Nichols and participated in weekly department meetings with other post-doctoral researchers and PhD students.
+\end{itemize}
+\end{minipage}\\&\\
+\end{longtable}
+
+\section{Teaching Experience}
+
+
+\begin{longtable}{rl}
+\textsc{Jan} 2017 - \textsc{Mar} 2017
+& \large{\textbf{Statistics Tutor}}\\
+& \textsc{The University of Warwick}\\
+& \textit{Coventry} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Led tutorials for a group of 20 students taking the ST111 and ST112: Probability A \& B undergraduate statistics modules.
+ \item Taught students about the foundational notions of mathematical probability and marked assignments for each module.
+\end{itemize}
+\end{minipage}\\&\\
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textsc{Sep} 2015
+& \large{\textbf{Teaching Intern}}\\
+& \textsc{Teach First Insight Programme}\\
+& \textit{London} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item One of a group of five interns that worked at Cranford Community College, Hounslow.
+ \item Assisted with lessons across a range of subject areas, interacting with students between the ages of 11 and 18.   
+ \item Planned and delivered a lesson on prime factorisation to a group of thirty-two Year 8 students.
+ \item Gave a presentation on my experiences at the school to Teach First employees in Canary Wharf. \end{itemize}
+\end{minipage}\\&\\
+
+\end{longtable}
+
+%Section: Work Experience at the top
+\section{Further Training}
+\begin{tabular}{rl}
+\textsc{Oct} 2017 - \textsc{Jun} 2018
+& \large{\textbf{fMRIB Graduate Programme}}\\
+& \textsc{The University of Oxford}\\
+& \textit{Oxford} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Learnt about the scanning and analysis methodologies used for three different modalities of neuroimaging: functional MRI, structural MRI, and diffusion MRI. 
+ \item Carried out practical examples using the methods I was taught within FSL. 
+ \item Completed an exam at the end of each term. For the MRI Physics and MRI Analysis exams, I achieved scores of 91\% and 88\% respectively. 
+ \end{itemize}
+\end{minipage}\\&\\
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textsc{Jul} 2017
+& \large{\textbf{Bocconi Summer School in Advanced Statistics and Probability}}\\
+& \textsc{Lake Como School of Advanced Studies}\\
+& \textit{Lake Como, Italy} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item One of 30 international students selected to participate in the summer school.   
+ \item Learnt about how statistical causal learning models can provide insight into machine learning tasks such as domain adaptation, transfer learning, and semi-supervised learning. 
+\end{itemize}
+\end{minipage}\\&\\
+
+\textsc{Dec} 2016 - \textsc{Aug} 2017
+& \large{\textbf{Academy for PhD Training in Statistics (APTS)}}\\
+& \textsc{Cambridge University, Oxford University, Durham University, Glasgow University}\\
+& \textit{UK} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Completed four residential weeks of training in statistics and probability during the first year of my PhD (one week at each university).
+ \item Learnt about various aspects of statistical modelling, statistical inference and statistical computing across a total of eight intensive course modules. 
+\end{itemize}
+\end{minipage}\\&\\
+
+\end{tabular}
+
+%Section: Languages
+
+\section{IT Skills}
+\begin{minipage}[t]{0.9\textwidth}
+ \begin{itemize}
+ %\setlength{\itemindent}{-.5cm}
+ \item \textbf{Programming Languages:} MATLAB, Python, bash, JAVA.
+ \item \textbf{Neuroimaging Software:} AFNI, FSL, SPM. 
+ \item \textbf{Version Control:} Git (Github). 
+ \end{itemize}
+\end{minipage}
+
+\section{References}
+\begin{enumerate}
+\item \textbf{Professor Thomas Nichols} \\
+\textit{Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Population
+Health, University of Oxford, Oxford, UK.} \\
+\textbf{Email:} thomas.nichols@bdi.ox.ac.uk\\
+	
+\item \textbf{Doctor Camille Maumet} \\
+\textit{Inria, Univ Rennes, CNRS, Inserm, IRISA UMR 6074, Empenn ERL U 1228, Rennes, France.} \\
+\textbf{Email:} camille.maumet@inria.fr \\
+\end{enumerate}
+
+
+%\newpage
+%\hypertarget{gmat}{\textsc{Gmat}\setmainfont{LMRoman10 Regular}\textregistered\setmainfont[SmallCapsFont=Fontin-SmallCaps]{Fontin-Regular}}
+
+%\XeTeXpdffile ''GMAT.pdf'' page 1 scaled 800
+
+\end{document}
