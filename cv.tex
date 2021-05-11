@@ -49,6 +49,7 @@ ItalicFont = Fontin-Italic.otf
 \usepackage{blindtext}
 \usepackage{booktabs}
 \usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
@@ -80,16 +81,16 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Alexander \textsc{Bowring}
+		{\Huge Alexander \textsc{Bowring} \\
+		\normalsize \color{Red}Early Career Research Fellow in Neuroimaging Statistics
 	}\bigskip\par}
 
 \begin{center}
 \begin{tabular}{rl}
-	\textsc{address:} & Apt. 40 Trinity Court, 4 Between Towns Road, Oxford, OX4 3PP \\
+	\textsc{email:}     & \href{mailto:alex.bowring@bdi.ox.ac.uk}{alex.bowring@bdi.ox.ac.uk}\\
 	\textsc{phone:} & +447944 240731\\
-    \textsc{email:}     & \href{mailto:alex.bowring@bdi.ox.ac.uk}{alex.bowring@bdi.ox.ac.uk}\\
+	\textsc{address:} & Big Data Institute, University of Oxford, Oxford, UK, OX3 7LF \\
     \\
-    \textbf{Research Interests:} & Functional Magnetic Resonance Imaging, Analysis Pipelines, \\& Statistical Inference Methods, Open science.
 \end{tabular}
 \end{center}
 
@@ -108,11 +109,16 @@ ItalicFont = Fontin-Italic.otf
 %Section: Education
 \section{Education}
 \begin{tabular}{rl}	
-\textsc{Oct} 2017 - Present & DPhil. in \textsc{Population Health}, \textbf{The University of Oxford}, Oxford\\
-& \textbf{Thesis:} \textit{A Comparison of Neuroimaging Software and a Contour Inference Method} \\& \textit{for Analysis of Task-fMRI Data.}\\
-& \textbf{Supervisors:} \textit{Professor Thomas Nichols, PhD. \& Professor Stephen Smith, PhD.} \\&\\ 
+\textsc{Nov} 2019 - Present & Early Career Research Fellow in \textsc{Neuroimaging Statistics}, \textbf{The University of Oxford}, Oxford\\
+ &\begin{minipage}[t]{0.8\textwidth} \begin{itemize} \item  A 2-year Early Career Research Fellowship awarded by the Nuffield Department of Population Health to research variability in neuroimaging workflows and develop statistical methods for meta-analyses of task-fMRI data. 
+ \end{itemize}\end{minipage}\\
+ & \textbf{Supervisor:} \textit{Professor Thomas Nichols} \\&\\ 
+\textsc{Oct} 2017 - \textsc{Nov} 2019 & DPhil. in \textsc{Population Health}, \textbf{The University of Oxford}, Oxford\\
+& \textbf{Thesis:} \textit{\href{https://doi.org/10.31237/osf.io/mj7qa}{On the Reproducibility and Interpretability of Group-Level Task-fMRI Results}}\\
+& \textbf{Supervisors:} \textit{Professor Thomas Nichols \& Professor Stephen Smith} \\&\\ 
 \textsc{Oct} 2016 - \textsc{Oct} 2017 & PhD. in \textsc{Statistics}, \textbf{The University of Warwick}, Coventry\\
-& \textbf{Supervisors:} \textit{Professor Thomas Nichols, PhD. \& Professor Armin Schwartzman, PhD.} \\&\\
+& \textbf{Supervisors:} \textit{Professor Thomas Nichols \& Professor Armin Schwartzman} \\
+& (Transferred to complete doctorate at The University of Oxford)\\&\\
 \textsc{Sep} 2012 - \textsc{Jul} 2015 & BSc. in \textsc{Mathematics}, \textbf{The University of Warwick}, Coventry\\
 & \textbf{First Class Honours.} \\
 & Selected modules: \textit{Galois Theory 88\%, Analysis III 90\%, Algebra II 86\%, Algebra I 80\%,}\\
@@ -123,16 +129,26 @@ ItalicFont = Fontin-Italic.otf
 
 %Section: Scholarships and additional info
 \section{Publications}
-(Preprint) \textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Spatial Confidence Sets for Raw Effect Size Images. \textit{BioRxiv} 2019. 
+\textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Confidence Sets for Cohen's \textit{d} effect size images. \textit{NeuroImage.} 2021. 
+
+Botvinik-Nezer R, Holzmeister  F, \dots, \textbf{Bowring A}, \dots, Schonberg T. Variability in the analysis of a single neuroimaging dataset by many teams. \textit{Nature.} 2020.
+
+\textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Spatial confidence sets for raw effect size images. \textit{NeuroImage.} 2019. 
 
 \textbf{Bowring A}, Maumet C, Nichols TE. Exploring the impact of analysis software on task fMRI results. \textit{Human Brain Mapping.} 2019. 
 
-Maumet C, Auer T, \textbf{Bowring A}, \dots, Nichols TE. Sharing brain mapping statistical results with the neuroimaging data model. \textit{Nature Scientific Data} 2016.
+Maumet C, Auer T, \textbf{Bowring A}, \dots, Nichols TE. Sharing brain mapping statistical results with the neuroimaging data model. \textit{Nature Scientific Data.} 2016.
 
 Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring fMRI Results Space: 31 Variants of an fMRI Analysis in AFNI, FSL, and SPM. \textit{Frontiers in Neuroinformatics.} 2016.\\
 
 \section{Selected Conference Presentations}
-(Oral \& Poster Presentation) \textbf{Same Data – Different Software – Different Results? Analytic Variability of Group fMRI Results.}, \textit{24th Annual Meeting of the Organization for Human Brain Mapping}, Singapore, June 17-21 2018. 
+(Poster Presentation, Upcoming) \textbf{Identifying Sources of Software-dependent Differences in Task fMRI Analyses}, \textit{27th Annual Meeting of the Organization for Human Brain Mapping}, Online (due to Covid-19 pandemic), June 21-25 2021.
+
+(Poster Presentation) \textbf{Spatial Confidence Sets for Standardized Effect Size Images}, \textit{26th Annual Meeting of the Organization for Human Brain Mapping}, Online (due to Covid-19 pandemic), June 23-July 3 2020. 
+
+(Twitter Presentation) \textbf{\href{https://twitter.com/OHBMequinoX/status/1240926466302500864}{Confidence Sets for Cohen’s \textit{d} Effect Size Images}}, \textit{Organization for Human Brain Mapping Equinox Twitter Conference}, Online, March 20 2020. 
+
+(Oral \& Poster Presentation) \textbf{\href{https://www.pathlms.com/ohbm/courses/8246/sections/12541/video_presentations/116000}{Same Data – Different Software – Different Results? Analytic Variability of Group fMRI Results.}}, \textit{24th Annual Meeting of the Organization for Human Brain Mapping}, Singapore, June 17-21 2018. 
 \vspace{-2mm}
 \begin{itemize}
 \item Winner of a \$2,000 OHBM Merit Abstract Award.
@@ -140,7 +156,7 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 \item Less than 5\% of submitted abstracts chosen for an oral presentation. 
 \end{itemize}
 
-(Oral \& Poster Presentation) \textbf{Spatial Confidence Sets - Beyond Null Hypothesis Testing of Cluster Size}, \textit{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017.
+(Oral \& Poster Presentation) \textbf{\href{https://www.pathlms.com/ohbm/courses/5158/sections/7816/video_presentations/78445}{Spatial Confidence Sets - Beyond Null Hypothesis Testing of Cluster Size}}, \textit{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017.
 \vspace{-2mm}
 \begin{itemize}
 \item Less than 5\% of submitted abstracts chosen for an oral presentation. 
@@ -152,7 +168,6 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 
 (Poster Presentation) \textbf{Confidence Sets - Going Beyond Voxel-level and Cluster-level Null Hypothesis Testing.} \textit{22nd Annual Meeting of the Organization for Human Brain Mapping}, Geneva, Switzerland, June 26-30 2016. 
 
-\newpage 
 %Section: Employment
 \section{Research Experience}
 \begin{longtable}{rl}	
@@ -163,18 +178,20 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 &\begin{minipage}[t]{0.8\textwidth}
  \begin{itemize}[leftmargin=*]
  %\setlength{\itemindent}{-.5cm}
- \item Worked alongside Prof. Thomas Nichols and Dr. Camille Maumet to develop standard practices for data sharing and meta-analysis in neuroimaging.
+ \item Developed standard practices for data-sharing and meta-analysis in neuroimaging as part of the project ``Transforming Statistical Methodology for Neuroimaging Meta-Analysis” under the supervision of Professor Thomas Nichols and Dr.\ Camille Maumet
  \item Extensively analysed neuroimaging data, gaining significant experience of the three main neuroimaging software packages: \textit{SPM}, \textit{FSL} and \textit{AFNI}. 
  \item Made analyses publicly available and provided documentation on my research efforts, becoming familiar with the Github version control system and making use of online data repositories such as Neurovault. 
  \item Mentored a PhD student who visited our lab for three months.  Our research during this period was published after peer-review in the journal \textit{Frontiers in Neuroinformatics}, for which I am second author. 
+\iffalse
  \item Assisted Dr. Maumet on the \textit{Neuroimaging Data Model} (NIDM), a project dedicated to the development of a standard to share neuroimaging results.
  \item As part of the NIDM project, proof-read and edited specification documents and tested research prototypes, reporting back on any issues. 
- \item Analyzed data and helped edit a journal article for NIDM, now published in \textit{Nature Scientific Data}, for which I am a coauthor. 
+ \item Analyzed data and helped edit a journal article for NIDM, now published in \textit{Nature Scientific Data}, for which I am a co-author. 
  \item Participated in weekly conference calls with international collaborators, discussing progress and ideas to further develop the NIDM project.
  \item Conducted my own research into developing a spatial inference method for analysing neuroimaging data under the supervision of Prof. Nichols. 
  \item Created and ran computer simulations to test this method in MATLAB. 
  \item Wrote an abstract describing the method, and gave a poster presentation on this research at the \textit{Organization for Human Brain Mapping} conference in Geneva, Switzerland.  
  \item Communicated daily with Prof. Nichols and Dr. Maumet, and participated in weekly meetings with other post-doctoral researchers and PhD students working in the field at the university. 
+\fi
   \end{itemize}
  \end{minipage} \\&\\
  
@@ -185,8 +202,8 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 &\begin{minipage}[t]{0.8\textwidth}
  \begin{itemize}[leftmargin=*]
  %\setlength{\itemindent}{-.5cm}
- \item Worked on the project \textit{Visualising the brain - Developing viewers of standardised fMRI results} under the supervision of Prof. Thomas Nichols.
- \item Analysed neuroimaging data in the neuroimaging software package \textit{SPM}. I used this data to test a research prototype developed by Dr Camille Maumet and made my analyses publicly available online.  
+ \item Assisted in developing software for visualising neuroimaging results as part of an undergraduate research project ``Visualising the brain - Developing viewers of standardised fMRI results".
+ \item Analysed neuroimaging data in the neuroimaging software package \textit{SPM}. I used this data to test a research prototype developed by Dr.\ Camille Maumet and made my analyses publicly available online.  
  \item Communicated daily with Prof. Nichols and participated in weekly department meetings with other post-doctoral researchers and PhD students.
 \end{itemize}
 \end{minipage}\\&\\
@@ -194,8 +211,43 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 
 \section{Teaching Experience}
 
-
 \begin{longtable}{rl}
+\textsc{Dec} 2020
+& \large{\textbf{Data Sherpa for Health Data Science Covid-19 Data Challenge}}\\
+& \textsc{The University of Oxford}\\
+& \textit{Oxford} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Mentored three PhD students in analysing Covid-19 data obtained from Oxfordshire hospitals to investigate the impact of Covid-19 on diabetes and glycaemic control.
+ \item Organised the raw data for the students, where I conducted data cleansing on electronic health records obtained from thousands of hospital patients using Python.
+\end{itemize}
+\end{minipage}\\&\\
+
+\textsc{Nov} 2020
+& \large{\textbf{Statistics Demonstrator}}\\
+& \textsc{The University of Oxford}\\
+& \textit{Oxford} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Led online tutorials for PhD students enrolled in the graduate Statistics course where I assisted in practical exercises on modern statistical methods and machine learning.
+ \item Taught students the fundamentals of regularised regression and Gaussian predictive models for machine learning. 
+\end{itemize}
+\end{minipage}\\&\\
+
+\textsc{Oct} 2020
+& \large{\textbf{Introduction to Python Course Leader}}\\
+& \textsc{The University of Oxford}\\
+& \textit{Oxford} \\
+&\begin{minipage}[t]{0.8\textwidth}
+ \begin{itemize}[leftmargin=*]
+ %\setlength{\itemindent}{-.5cm}
+ \item Ran an introductory course on Python programming for a class of graduate students enrolled in the Centre for Doctoral Training PhD programme.
+ \item Taught students about how to use the fundamental functions and packages needed for programming in Python, including tutorials on the Numpy, Pandas and Scipy packages. 
+\end{itemize}
+\end{minipage}\\&\\
+
 \textsc{Jan} 2017 - \textsc{Mar} 2017
 & \large{\textbf{Statistics Tutor}}\\
 & \textsc{The University of Warwick}\\
@@ -282,10 +334,12 @@ Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring
 \item \textbf{Professor Thomas Nichols} \\
 \textit{Big Data Institute, Li Ka Shing Centre for Health Information and Discovery, Nuffield Department of Population
 Health, University of Oxford, Oxford, UK.} \\
+\textbf{Phone:} 	+44 1865 743590\\
 \textbf{Email:} thomas.nichols@bdi.ox.ac.uk\\
 	
 \item \textbf{Doctor Camille Maumet} \\
 \textit{Inria, Univ Rennes, CNRS, Inserm, IRISA UMR 6074, Empenn ERL U 1228, Rennes, France.} \\
+\textbf{Phone:} 	+33 2 99 84 72 30\\
 \textbf{Email:} camille.maumet@inria.fr \\
 \end{enumerate}
 
