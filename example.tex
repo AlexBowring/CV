@@ -1,0 +1,184 @@
+\documentclass{my_cv}
+\usepackage[skins]{tcolorbox}
+\usepackage{lipsum}
+\usepackage[normalem]{ulem}
+\usepackage{scrextend}
+\usepackage{enumitem}
+\usepackage{fontspec}
+
+\newcommand*{\myfont}{\fontfamily{lmr}\selectfont}
+\DeclareTextFontCommand{\textmyfont}{\itshape\myfont}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+\begin{document}
+\begin{multicols}{2}[
+    \titletext{Alexander}%
+        {Bowring}%
+        {Population Health PhD, Mathematics BSc}%
+        {(+44) 7944 240731}%
+        {\href{mailto:alex.bowring@bdi.ox.ac.uk}{alex.bowring@bdi.ox.ac.uk}}%
+        {\href{https://www.linkedin.com/in/alexander-bowring/}{alexander-bowring}}%
+        {\href{https://github.com/AlexBowring/}{AlexBowring}}
+]
+
+\end{multicols}
+
+\vspace{-1.7cm}
+\begin{tcolorbox}[colback=white,colframe=cyan,width=\dimexpr\textwidth+12mm\relax,enlarge left by=-6mm]
+\section{\faStickyNote}{Summary}
+\textbf{Early Career Research Fellow} and \textbf{Population Health PhD} graduate from the \textbf{University of Oxford} with over 5 years experience in \textbf{developing, testing and applying statistical models} to analyse high-dimensional medical imaging data. As a research scientist I have \textbf{cleaned and analysed complex imaging datasets}, applying extensive programming skills (\textbf{Python, R, Matlab, Unix}) to develop replicable analysis workflows and provide data visualisations. These skills are combined with a technical background in \textbf{mathematics}, for which I obtained a \textbf{First Class Honours BSc degree} from the \textbf{University of Warwick}. 
+  
+\end{tcolorbox}
+
+
+\section{\faGraduationCap}{Education}
+
+\work{Nuffield Department of Population Health, University of Oxford  \hfill Oxford, UK}{\uline{\textmyfont{Doctor of Philosophy in Population Health} \hfill \textmyfont{Oct 2016 - Nov 2019}}}%
+{\begin{addmargin}[2em]{1em}
+    Thesis: \href{https://doi.org/10.31237/osf.io/mj7qa}{On the Reproducibility and Interpretability of Group-Level Task-fMRI Results} \\
+    Supervisors: Professor Thomas Nichols, Professor Stephen Smith \\
+    Examiners: Professor Mark Woolrich, Professor Ian Dryden 
+\end{addmargin}}
+    
+\work{University of Warwick \hfill Coventry, UK}{\uline{\textmyfont{Batchelor of Science in Mathematics} \hfill \textmyfont{Sep 2012 - Jul 2015}}}%
+    {\begin{addmargin}[2em]{1em}
+    Graduated with \textbf{First Class Honours}, achieving a score of >80\% in modules including: Algebra II, Analysis III, Galois Theory, Programming for Scientists and Mathematics by Computer.
+\end{addmargin}}
+    
+\section{\faBriefcase}{Professional Experience}
+
+\work{Nuffield Department of Population Health, University of Oxford \hfill Oxford, UK}{\uline{\textmyfont{Early Career Research Fellow in Neuroimaging Statistics} \hfill \textmyfont{Nov 2019 - Present}}}%
+    {\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Led a research project to investigate the variability of MRI results attributable to differences in the numerous analytic strategies that are implemented to process functional imaging data. 
+    \item Designed and carried out a `multiverse' of analysis workflows on open MRI datasets, using Python, Matlab and Unix programming to conduct multiple analyses in parallel on a computing cluster.
+    \item Developed statistical methods to assess the similarity of spatial statistical maps, and created Python notebooks to apply these methods and visualise the results.
+    \item Led the `Neuroimaging Statistics Oxford' reading group, where I organised weekly talks at the university from international expert speakers in the field of neuroimaging statistics. 
+    \item Contributed to wider academics activities within the university that included teaching PhD students statistical methods, programming skills, and aspects of performing independent research.
+    \end{itemize}
+    }%
+
+\work{Warwick Manufacturing Group, University of Warwick \hfill Coventry, UK}{\uline{\textmyfont{Research Assistant in Neuroimaging Statistics} \hfill \textmyfont{Nov 2015 - Oct 2016}}}%
+    {\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Developed standard practices for data-sharing and meta-analysis in neuroimaging as part of the project ``Transforming Statistical Methodology for Neuroimaging Meta-Analysis”. 
+    \item Carried out extensive analyses of fMRI data, gaining substantial experience in the main software packages used to analyse imaging data.
+    \item Documented my research efforts and provided version control of my analyses with Github. Used online data repositories to share my analysis results. 
+    \item Mentored a PhD student that visited our lab for three months. The research project we carried out in this time frame was subsequently published in a peer-reviewed journal. 
+    \end{itemize}
+    }%
+     
+\work{Undergraduate Research Support Scheme, University of Warwick \hfill Coventry, UK}%
+    {\uline{\textmyfont{Undergraduate Research Intern} \hfill \textmyfont{Jun 2015 - Oct 2015}}}%
+    {\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Assisted in developing software that provided visualisations of neuroimaging results for an undergraduate research project ``Visualising the brain - Developing viewers of standardised fMRI results". 
+    \item Conducted analyses of neuroimaging data to test and debug research prototypes of the viewer. 
+    \item Gained experience in academic research, attending department meetings alongside PhD students and post-doctoral researchers and communicating daily with my supervisor.
+    \end{itemize}
+    }%
+    
+\section{\faBook}{Publications}
+\leftskip=2em
+\parindent=-2em
+
+\hspace{-2em}\textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Confidence Sets for Cohen's \textmyfont{d} effect size images. \textmyfont{NeuroImage.} 2021. 
+
+\textbf{Bowring A}, Telschow F, Schwartzman A, Nichols TE. Spatial confidence sets for raw effect size images. \textmyfont{NeuroImage.} 2019. 
+
+\textbf{Bowring A}, Maumet C, Nichols TE. Exploring the impact of analysis software on task fMRI results. \textmyfont{Human Brain Mapping.} 2019.\\
+\textbf{Altmetric Attention Score ranking in the top 5\% of all research outputs scored by Altmetric.}
+
+Botvinik-Nezer R, Holzmeister  F, \dots, \textbf{Bowring A}, \dots, Schonberg T. Variability in the analysis of a single neuroimaging dataset by many teams. \textmyfont{Nature.} 2020. 
+
+Maumet C, Auer T, \textbf{Bowring A}, \dots, Nichols TE. Sharing brain mapping statistical results with the neuroimaging data model. \textmyfont{Nature Scientific Data.} 2016.
+
+Pauli R, \textbf{Bowring A}, Reynolds R, Chen G, Nichols TE, Maumet C. Exploring fMRI Results Space: 31 Variants of an fMRI Analysis in AFNI, FSL, and SPM. \textmyfont{Frontiers in Neuroinformatics.} 2016.
+
+\leftskip=0em
+\parindent 0em
+
+\section{\faBarChart}{Conference Presentations}
+\leftskip=2em
+\parindent=-2em
+
+\hspace{-2em}(Poster Presentation, Upcoming) Identifying Sources of Software-dependent Differences in Task fMRI Analyses, \textmyfont{27th Annual Meeting of the Organization for Human Brain Mapping}, Online (due to Covid-19 pandemic), June 21-25 2021.\\
+\textbf{One of <5\% of submissions selected by the Program Committee as an exceptional abstract. }
+
+(Poster Presentation) Spatial Confidence Sets for Standardized Effect Size Images, \textmyfont{26th Annual Meeting of the Organization for Human Brain Mapping}, Online (due to Covid-19 pandemic), June 23-July 3 2020. 
+
+(Twitter Presentation) \href{https://twitter.com/OHBMequinoX/status/1240926466302500864}{Confidence Sets for Cohen’s \textmyfont{d} Effect Size Images}, \textmyfont{Organization for Human Brain Mapping Equinox Twitter Conference}, Online, March 20 2020. 
+
+(Oral \& Poster Presentation) \href{https://www.pathlms.com/ohbm/courses/8246/sections/12541/video_presentations/116000}{Same Data – Different Software – Different Results? Analytic Variability of Group fMRI Results.}, \textmyfont{24th Annual Meeting of the Organization for Human Brain Mapping}, Singapore, June 17-21 2018. \\
+\textbf{Winner of a \$2,000 OHBM Merit Abstract Award.} \\
+\textbf{One of <5\% of submissions selected by the Program Committee for an oral presentation. }
+
+(Oral \& Poster Presentation) \href{https://www.pathlms.com/ohbm/courses/5158/sections/7816/video_presentations/78445}{Spatial Confidence Sets - Beyond Null Hypothesis Testing of Cluster Size}, \textmyfont{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017. \\
+\textbf{One of <5\% of submissions selected by the Program Committee for an oral presentation. }
+
+(Poster Presentation) Impact of Analysis Software on Replication of fMRI Studies, \textmyfont{23rd Annual Meeting of the Organization for Human Brain Mapping}, Vancouver, Canada, June 25-29 2017.
+
+(Oral Presentation) Towards reproducible brain imaging research, \textmyfont{WIN Annual Conference}, Coventry, January 24 2017.
+
+(Poster Presentation) Confidence Sets - Going Beyond Voxel-level and Cluster-level Null Hypothesis Testing, \textmyfont{22nd Annual Meeting of the Organization for Human Brain Mapping}, Geneva, Switzerland, June 26-30 2016.
+
+\leftskip=0em
+\parindent=0em
+
+\section{\faPencilSquareO}{Teaching Experience}
+
+\uline{\large\bfseries{University of Oxford}  \hfill \large\bfseries{Oxford, UK}}
+{\begin{addmargin}[2em]{0em}
+
+    \textmyfont{Data Sherpa for Covid-19 Data Challenge \hfill Michaelmas 2020}
+    \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Mentored three PhD students in analysing Covid-19 data obtained from Oxfordshire hospitals to investigate the impact of Covid-19 on diabetes and glycaemic control.
+    \item Prepared the data for the students, carrying out data cleaning on electronic health records from thousands of hospital patients using Python.
+    \end{itemize}
+    \textmyfont{Statistics Demonstrator \hfill Michaelmas 2019, 2020}
+    \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Led online tutorials for PhD students enrolled in the graduate Statistics course where I assisted in practical exercises on modern statistical methods and machine learning.
+    \item Taught students the fundamentals of regularised regression and Gaussian predictive models for machine learning.
+    \end{itemize}
+    \textmyfont{Introduction to Python Course Leader \hfill Michaelmas 2020}
+    \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Ran an introductory course on Python programming for a class of graduate students enrolled in the Centre for Doctoral Training PhD programme.
+    \item Taught students about how to use the fundamental functions and packages needed for programming in Python, including tutorials on the numpy, pandas and scipy packages.
+    \end{itemize}
+\end{addmargin}}
+\vspace{0.2cm}
+\uline{\large\bfseries{University of Warwick}  \hfill \large\bfseries{Coventry, UK}}
+{\begin{addmargin}[2em]{0em}
+    \textmyfont{Statistics Tutor \hfill Spring 2017}
+    \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Led tutorials for a group of 20 undergraduate Statistics students taking the ST111 and ST112: Probabiliy A \& B modules.
+    \item Taught students about the foundational notions of mathematical probability and marked assignments for each module.
+     \end{itemize}
+\end{addmargin}}
+\vspace{0.2cm}
+\uline{\large\bfseries{Teach First Insight Programme}  \hfill \large\bfseries{London, UK}}
+{\begin{addmargin}[2em]{0em}
+    \textmyfont{Teaching Intern \hfill Summer 2015}
+    \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt] 
+    \item Selected for a summer internship with Teach First to help tackle social inequality in the UK education system.
+    \item Planned and delivered lessons to a class of 30+ students at Cranford Community College, Hounslow, interacting with students between the ages of 11 and 18.  
+    \item Gave a presentation on my experiences to senior Teach First employees in Canary Wharf. 
+     \end{itemize}
+\end{addmargin}}
+
+   
+
+
+\section{\faGears}{SKILLS}
+
+\textbf{Technical:} Python, R, Matlab, Unix, Github. \\
+\textbf{Neuroimaging Analysis Software:} AFNI, FSL, SPM.  \\
+\textbf{Research:} Data Preprocessing, Data Analysis, Statistical Testing, Simulations, Analysis of large neuroimaging datasets: UK Biobank, Human Connectome Project. \\
+\textbf{Miscellaneous:} Holder of a full UK Driving Licence.
+
+\section{\faLaptop}{Covid-19 County Case Tracker}
+
+From March 2020-January 2021 I developed and maintained the \href{https://covid19cct.shinyapps.io/covid19cct/}{\textit{Covid-19 County Case Tracker}} R Shinyapp. I used R programming to harvest publicly available national Covid-19 data and provide visualisations of the trends in Covid-19 cases at the county-level in England and Scotland. During the first UK lockdown the app received over 100+ hours of usage per day, garnering attention from radio and media outlets including \href{https://grm.digital/heroes-of-covid19/info/}{GRM Digital} and the \href{https://www.oxfordmail.co.uk/news/18358052.app-tracks-oxfordshire-covid-19-cases/}{Oxford Mail}.
+
+\end{document}
