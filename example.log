@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.3.13)  14 JUN 2021 19:40
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.3.13)  14 JUN 2021 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,19 +1343,13 @@ LaTeX Font Info:    Font shape `EU1/Raleway(5)/bx/n' will be
 (Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `EU1/Raleway(5)/bx/n' will be
 (Font)              scaled to size 35.0pt on input line 27.
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-
- []
-
-LaTeX Font Info:    Font shape `EU1/Raleway(4)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 27.
-LaTeX Font Info:    Font shape `EU1/Raleway(4)/m/n' will be
-(Font)              scaled to size 40.0pt on input line 27.
+LaTeX Font Info:    Font shape `EU1/Raleway(5)/bx/n' will be
+(Font)              scaled to size 20.0pt on input line 27.
 LaTeX Font Info:    Font shape `EU1/Raleway(1)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `EU1/Raleway(0)/bx/n' will be
 (Font)              scaled to size 10.0pt on input line 27.
+
 
 LaTeX Font Warning: Font shape `EU1/FontAwesome(0)/bx/n' undefined
 (Font)              using `EU1/FontAwesome(0)/m/n' instead on input line 32.
@@ -1445,12 +1439,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 37152 strings out of 493591
- 721563 string characters out of 6143546
- 866097 words of memory out of 5000000
- 40105 multiletter control sequences out of 15000+600000
- 4410 words of font info for 54 fonts, out of 8000000 for 9000
+ 37150 strings out of 493591
+ 721477 string characters out of 6143546
+ 866060 words of memory out of 5000000
+ 40104 multiletter control sequences out of 15000+600000
+ 4402 words of font info for 53 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 62i,7n,87p,10429b,859s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,7n,87p,10429b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on example.pdf (4 pages).
