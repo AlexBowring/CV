@@ -29,7 +29,7 @@
 
 % section different style
 \titleformat{\section}         
-  {\ralewayextra\bfseries\raggedright\color{cvblue}} 
+  {\ralewayextra\bfseries\raggedright} 
   {}{0em}  % prefix to all sections
   {\hspace{-0.8em}}  % code before the heading
 
@@ -56,10 +56,8 @@
 
 \newcommand*{\titletext}[7]{%
     \begin{multicols}{2}
-    {\ralewayextra\bfseries\fontsize{35}{35}\selectfont \hspace{-10pt} #1}\vspace{-14pt}\\
-    \begin{flushright}
-    {\ralewaythin\fontsize{40}{40}\selectfont #2}
-    \end{flushright}
+    {\ralewayextra\bfseries\fontsize{20}{20}\selectfont \hspace{-100pt} #1}\vspace{20pt}\\
+    {\ralewayextra\bfseries\fontsize{20}{20}\selectfont \hspace{0pt} #2}
     
     {\raleway\selectfont \hspace{0pt}#3}
     \columnbreak
