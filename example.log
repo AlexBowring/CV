@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.25)  25 AUG 2025 23:42
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.25)  21 SEP 2025 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1449,27 +1449,29 @@ LaTeX Font Warning: Font shape `TU/FontAwesome(0)/b/n' undefined
 LaTeX Font Info:    Font shape `TU/Raleway(5)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 32.
 
-Overfull \hbox (17.07166pt too wide) in paragraph at lines 37--37
+Overfull \hbox (17.07166pt too wide) in paragraph at lines 34--34
 [] 
  []
 
 LaTeX Font Info:    Font shape `TU/Raleway(0)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 50.
+(Font)              scaled to size 12.0pt on input line 45.
 LaTeX Font Info:    Font shape `TU/Raleway(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 50.
+(Font)              scaled to size 12.0pt on input line 45.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 50.
+(hyperref)                removing `\hfill' on input line 45.
 
 LaTeX Font Info:    Font shape `TU/Raleway(0)/m/it' will be
-(Font)              scaled to size 10.0pt on input line 50.
+(Font)              scaled to size 10.0pt on input line 45.
+
+Overfull \hbox (7.43385pt too wide) in paragraph at lines 45--45
+\TU/Raleway(1)/m/n/10 learning importance metrics to identify common vulnerabil
+ity drivers across communities SSEN serves.
+ []
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 59.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 67.
+(hyperref)                removing `\hfill' on input line 54.
 
 
 
@@ -1478,27 +1480,19 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 75.
+(hyperref)                removing `\hfill' on input line 62.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 87.
-
-
-Overfull \hbox (0.92386pt too wide) in paragraph at lines 87--87
-[]\TU/Raleway(1)/m/n/10 Evaluated reproducibility of task-fMRI results across s
-oftware packages (AFNI, FSL, SPM), lead-
- []
+(hyperref)                removing `\hfill' on input line 70.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hfill' on input line 92.
+(hyperref)                removing `\hfill' on input line 83.
 
 
-Overfull \hbox (0.54967pt too wide) in paragraph at lines 100--101
-[]\TU/Raleway(0)/b/n/10 Analytical: \TU/Raleway(1)/m/n/10 Frequentist statistic
-s, machine learning, gradient boosting, linear optimisation, data
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\hfill' on input line 88.
 
 
 
@@ -1512,15 +1506,15 @@ L3 programming layer <2025-01-18>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 97435DDDF7695B8E240878C9823E0D94;2910.
+(rerunfilecheck)             Checksum: 2B37ADF400BEF622A25EFD09BC4FDC89;2679.
  ) 
 Here is how much of TeX's memory you used:
  28993 strings out of 475366
  617888 string characters out of 5762339
- 1189206 words of memory out of 5000000
+ 1187955 words of memory out of 5000000
  51495 multiletter control sequences out of 15000+600000
  559655 words of font info for 82 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 131i,7n,135p,947b,942s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 131i,7n,135p,1089b,942s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on example.pdf (2 pages).
