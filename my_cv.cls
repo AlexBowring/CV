@@ -8,7 +8,7 @@
 \RequirePackage[default]{raleway}
 \RequirePackage{relsize}
 \RequirePackage{ifthen}
-\RequirePackage[margin=0.8in,footskip=0.25in]{geometry}
+\RequirePackage[margin=0.4in,footskip=0.01in]{geometry}
 \RequirePackage{multicol}
 \RequirePackage[skins]{tcolorbox}
 
