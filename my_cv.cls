@@ -2,34 +2,36 @@
 \ProvidesClass{my_cv}[2020/01/04 My CV class]
 
 \LoadClass[a4paper]{article}
+\pagestyle{empty} 
 \RequirePackage{fontawesome}  % fonts
 \RequirePackage{titlesec}     % for editing secions
 \RequirePackage{xcolor}
-\RequirePackage[default]{raleway}
+\RequirePackage{raleway}
 \RequirePackage{relsize}
 \RequirePackage{ifthen}
-\RequirePackage[margin=0.4in,footskip=0.01in]{geometry}
+\RequirePackage[top=0.1in, bottom=0in, left=0.4in, right=0.4in, footskip=0.01in]{geometry}
 \RequirePackage{multicol}
 \RequirePackage[skins]{tcolorbox}
-
+\usepackage{fontspec}
+\setmainfont{Arial} 
 
 %% page settings
 \setlength\columnsep{1.5cm}
 
 %% custom colors
-\definecolor{cvblue}{rgb}{0.32, 0.68, 0.89}
+\definecolor{cvblue}{rgb}{0.0, 0.2, 0.5}
 
 %%% edit section format
 % circled icons
 \newcommand*{\circled}[1]{
     \tikz[baseline=(char.base)]{
-        \node[shape=circle,fill=black,inner sep=2pt,minimum size=23pt] (char) {\textcolor{white}{#1}};
+        \node[shape=circle,fill=cvblue,inner sep=2pt,minimum size=23pt] (char) {\textcolor{white}{#1}};
     }
 }
 
 % section different style
 \titleformat{\section}         
-  {\ralewayextra\bfseries\raggedright} 
+  {\ralewayextra\bfseries\raggedright\color{cvblue}} 
   {}{0em}  % prefix to all sections
   {\hspace{-0.8em}}  % code before the heading
 
@@ -45,7 +47,7 @@
 % section with symbol besides
 \let\oldsection\section
 \renewcommand*{\section}[2]{%
-  \oldsection[#2]{\circled{#1} {\larger[2] #2}}%
+  \oldsection[#2]{{\larger[2] #2}}%
 }
 
 \newcommand*{\work}[3]{%
